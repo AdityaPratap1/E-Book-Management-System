@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../LogIn/login_style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Student.StudentProfileController">
+   <children>
+      <Label layoutX="218.0" layoutY="26.0" text="My Profile" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="37.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtFname" editable="false" focusColor="WHITE" labelFloat="true" layoutX="63.0" layoutY="106.0" promptText="First Name" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXToggleButton fx:id="tglbtnEditProfile" layoutX="414.0" layoutY="19.0" text="Edit Profile" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXTextField fx:id="txtLname" editable="false" focusColor="WHITE" labelFloat="true" layoutX="63.0" layoutY="176.0" promptText="Last Name" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXTextField fx:id="txtDOB" editable="false" focusColor="WHITE" labelFloat="true" layoutX="63.0" layoutY="240.0" promptText="Date of Birth" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXTextField fx:id="txtStudentId" editable="false" focusColor="WHITE" labelFloat="true" layoutX="341.0" layoutY="106.0" promptText="Student Id" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXTextField fx:id="txtLoginId" editable="false" focusColor="WHITE" labelFloat="true" layoutX="341.0" layoutY="176.0" promptText="LogIn Id" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXTextField fx:id="txtPassword" editable="false" focusColor="WHITE" labelFloat="true" layoutX="341.0" layoutY="240.0" promptText="Password" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXTextField fx:id="txtGrade" editable="false" focusColor="WHITE" labelFloat="true" layoutX="63.0" layoutY="299.0" promptText="Grade" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXTextField fx:id="txtRedemptionCode" editable="false" focusColor="WHITE" labelFloat="true" layoutX="341.0" layoutY="299.0" prefHeight="29.0" prefWidth="146.0" promptText="Redemption Code" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXButton fx:id="btnSave" layoutX="522.0" layoutY="340.0" onAction="#onStudentProfileSaveInformation" prefHeight="29.0" prefWidth="56.0" styleClass="login-button" text="Save" />
+      <JFXButton fx:id="btnBookScreen" layoutX="63.0" layoutY="38.0" onAction="#onBookScreenAction" styleClass="login-button" text="View Book List" />
+      <Label fx:id="lblSaveSuccess" layoutX="218.0" layoutY="346.0" textFill="#21c113">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblWarn" layoutX="183.0" layoutY="344.0" prefHeight="17.0" prefWidth="199.0" textFill="RED">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

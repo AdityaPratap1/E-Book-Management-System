@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="600.0" stylesheets="@../LogIn/login_style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Student.StudentReturnBookController">
+   <children>
+      <Label fx:id="lblTitle" layoutX="187.0" layoutY="40.0" text="Book Title" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="100.0" text="Author First Name" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="390.0" layoutY="100.0" text="Author Last Name" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="197.0" text="ISBN Number" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="211.0" text="Publisher" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="298.0" prefHeight="27.0" prefWidth="50.0" text="Genre" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnReturnBook" layoutX="252.0" layoutY="344.0" onAction="#onReturnBookAction" prefHeight="33.0" prefWidth="109.0" styleClass="login-button" text="Return Book">
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnViewBookList" layoutX="62.0" layoutY="41.0" onAction="#onBookScreenAction" styleClass="login-button" text="View Book List" />
+      <Label fx:id="lblBookStatus" layoutX="269.0" layoutY="345.0" textFill="RED">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="lblFName" editable="false" focusColor="WHITE" layoutX="55.0" layoutY="150.0" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXTextField fx:id="lblISBN" editable="false" focusColor="WHITE" layoutX="55.0" layoutY="238.0" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXTextField fx:id="lblLName" editable="false" focusColor="WHITE" layoutX="394.0" layoutY="150.0" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXTextField fx:id="lblPublisher" editable="false" focusColor="WHITE" layoutX="394.0" layoutY="250.0" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXTextField fx:id="lblGenre" editable="false" focusColor="WHITE" layoutX="55.0" layoutY="333.0" styleClass="login_text_fields" unFocusColor="#868686" />
+      <Label fx:id="lblSuccessReturn" layoutX="255.0" layoutY="403.0" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblReturned" layoutX="181.0" layoutY="386.0" prefHeight="34.0" prefWidth="247.0" textFill="#02ff12">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../LogIn/login_style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Manager.ManagerScreenController">
+   <children>
+      <JFXTextField fx:id="txtSearchStudent" layoutX="167.0" layoutY="19.0" prefHeight="29.0" prefWidth="253.0" promptText="Search Users by Name" styleClass="login_text_fields" />
+      <JFXButton fx:id="btnWeeklyIssueReport" layoutX="243.0" layoutY="344.0" onAction="#onWeeklyIssueAction" styleClass="login-button" text="Weekly Issue Report" />
+      <JFXButton fx:id="btnLogout" layoutX="503.0" layoutY="20.0" onAction="#onLogoutAction" styleClass="login-button" text="Log Out" />
+      <TableView fx:id="tableView" layoutX="12.0" layoutY="76.0" prefHeight="249.0" prefWidth="578.0">
+        <columns>
+          <TableColumn fx:id="studentFirstNameCol" prefWidth="190.0" text="Student First Name" />
+          <TableColumn fx:id="studentLastNameCol" minWidth="0.0" prefWidth="208.0" text="Student Last Name" />
+            <TableColumn fx:id="studentRedemptionCodeCol" prefWidth="179.0" text="Student Redemption Code" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

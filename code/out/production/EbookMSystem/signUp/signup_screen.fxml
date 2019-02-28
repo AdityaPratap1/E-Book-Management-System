@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../LogIn/login_style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signUp.SignupScreenController">
+   <children>
+      <JFXTextField fx:id="firstNameText" focusColor="WHITE" labelFloat="true" layoutX="54.0" layoutY="47.0" promptText="First Name" styleClass="login_text_fields" stylesheets="@../LogIn/login_style.css" unFocusColor="#868686" />
+      <JFXTextField fx:id="lastNameText" focusColor="WHITE" labelFloat="true" layoutX="54.0" layoutY="111.0" prefHeight="29.0" prefWidth="146.0" promptText="Last Name" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXTextField fx:id="gradeText" focusColor="WHITE" labelFloat="true" layoutX="53.0" layoutY="238.0" promptText="Grade (Skip If Manager)" styleClass="login_text_fields" stylesheets="@../LogIn/login_style.css" unFocusColor="#868686" />
+      <JFXTextField fx:id="studentIdText" focusColor="WHITE" labelFloat="true" layoutX="54.0" layoutY="296.0" prefHeight="29.0" prefWidth="163.0" promptText="Student Id (Skip if Manager)" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXTextField fx:id="usernameText" focusColor="WHITE" labelFloat="true" layoutX="363.0" layoutY="47.0" promptText="Create Username" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXTextField fx:id="passwordText" focusColor="WHITE" labelFloat="true" layoutX="363.0" layoutY="111.0" promptText="Create Password" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXTextField fx:id="confirmPasswordText" focusColor="WHITE" labelFloat="true" layoutX="363.0" layoutY="176.0" promptText="Confirm Password" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXComboBox fx:id="chooseRoleText" focusColor="WHITE" labelFloat="true" layoutX="362.0" layoutY="237.0" prefHeight="31.0" prefWidth="146.0" promptText="Choose Role" stylesheets="@../LogIn/login_style.css" unFocusColor="#868686">
+         <styleClass>
+            <String fx:value="cell" />
+            <String fx:value="jfx-date-picker" />
+            <String fx:value="jfx-combo-box-promp" />
+         </styleClass></JFXComboBox>
+      <JFXTextField fx:id="emaddressText" focusColor="WHITE" labelFloat="true" layoutX="363.0" layoutY="296.0" prefHeight="29.0" prefWidth="146.0" promptText="Email Address (Optional)" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXButton fx:id="signUpButton" layoutX="356.0" layoutY="350.0" onAction="#signUpUserDatabase" styleClass="login-button" stylesheets="@../LogIn/login_style.css" text="Sign Up" />
+      <JFXButton fx:id="cancelbutton" layoutX="461.0" layoutY="350.0" onAction="#cancelReturn" styleClass="login-button" stylesheets="@../LogIn/login_style.css" text="Cancel" />
+      <JFXDatePicker fx:id="datePicker" defaultColor="WHITE" layoutX="54.0" layoutY="177.0" prefHeight="28.0" prefWidth="181.0" promptText="Date of Birth" styleClass="month-year-pane" />
+      <Label fx:id="lblUsernameWarning" layoutX="133.0" layoutY="350.0" prefHeight="27.0" prefWidth="201.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="EbookMSystem">
+    <output-path />
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="LogIn.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="EbookMSystem.jar">
+        <element id="module-output" name="EbookMSystem" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+      <element id="library" level="project" name="sqljdbc4-4.0" />
+      <element id="library" level="project" name="sqlite-jdbc-3.23.1" />
+      <element id="library" level="project" name="jfoenix-9.0.8" />
+      <element id="library" level="application" name="javafx11" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../LogIn/login_style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Manager.ManagerProfileScreenController">
+   <children>
+      <Label layoutX="218.0" layoutY="26.0" text="My Profile" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="37.0" />
+         </font>
+      </Label>
+      <JFXTextField editable="false" focusColor="WHITE" labelFloat="true" layoutX="63.0" layoutY="106.0" promptText="First Name" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXToggleButton fx:id="tglbtnEditProfile" layoutX="414.0" layoutY="19.0" text="Edit Profile" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXTextField editable="false" focusColor="WHITE" labelFloat="true" layoutX="63.0" layoutY="176.0" promptText="Last Name" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXTextField editable="false" focusColor="WHITE" labelFloat="true" layoutX="63.0" layoutY="240.0" promptText="Date of Birth" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXTextField editable="false" focusColor="WHITE" labelFloat="true" layoutX="341.0" layoutY="106.0" promptText="LogIn Id" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXTextField editable="false" focusColor="WHITE" labelFloat="true" layoutX="341.0" layoutY="176.0" promptText="Password" styleClass="login_text_fields" unFocusColor="#868686" />
+      <JFXButton fx:id="btnSave" layoutX="239.0" layoutY="308.0" onAction="#onSaveInfoAction" prefHeight="29.0" prefWidth="123.0" styleClass="login-button" text="Save Information" />
+      <JFXButton fx:id="btnUserScreen" layoutX="63.0" layoutY="38.0" onAction="#onUserScreenAction" styleClass="login-button" text="View User List" />
+   </children>
+</AnchorPane>

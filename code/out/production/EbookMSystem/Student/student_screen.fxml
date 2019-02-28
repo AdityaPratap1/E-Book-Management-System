@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../LogIn/login_style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Student.StudentScreenController">
+   <children>
+      <JFXTextField fx:id="txtSearchBook" alignment="CENTER" focusColor="WHITE" layoutX="150.0" layoutY="53.0" prefHeight="25.0" prefWidth="315.0" promptText="Search by Book Title or Author Name" styleClass="login_text_fields" stylesheets="@../LogIn/login_style.css" unFocusColor="#868686" />
+      <TableView fx:id="tableView" layoutX="7.0" layoutY="98.0" prefHeight="303.0" prefWidth="588.0">
+      <columns>
+         <TableColumn fx:id="bookTitleCol" minWidth="20.0" prefWidth="205.0" text="Book Title">
+         </TableColumn>
+            <TableColumn fx:id="authorFirstNameCol" prefWidth="197.0" text="Author First Name" />
+            <TableColumn fx:id="authorLastNameCol" prefWidth="185.0" text="Author Last Name" />
+
+      </columns>
+      </TableView>
+      <JFXButton fx:id="btnLogOut" layoutX="504.0" layoutY="41.0" onAction="#onLogoutAction" text="Log Out">
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="login-button" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton fx:id="btnProfile" layoutX="42.0" layoutY="21.0" onAction="#onMyProfileAction" styleClass="login-button" text="My Profile" />
+      <Label fx:id="lblRedemptionprompt" layoutX="197.0" layoutY="14.0" text="My Redemption Code :" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="lblRedemptionCode" layoutX="378.0" layoutY="15.0" prefHeight="17.0" prefWidth="61.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <JFXButton fx:id="btnReturnBooks" layoutX="34.0" layoutY="55.0" onAction="#onIssuedBookAction" styleClass="login-button" text="Return Books" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+
+{
+
+-fx-primary:#2A2E37;
+
+-fx-secondary: #FFFF0D;
+
+-fx-primarytext: #B2B2B2;
+-fx-white: #ffffff;
+
+
+
+
+}
+.root{
+    -fx-background-color: -fx-primary;
+}
+
+.button{
+    -fx-text-fill: -fx-primarytext;
+}
+
+
+
+.login-button{
+    -fx-border-color: -fx-white;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+
+.login-button:hover{
+    -fx-border-color: -fx-white;
+    -fx-background-color: -fx-white;
+    -fx-text-fill: -fx-primary;
+}
+
+
+.login_text_fields.text-field{
+    -fx-text-fill: -fx-white;
+    -fx-prompt-text-fill: WHITE;
+    -fx-font-size: 13px;
+    -jfx-focus-color: -fx-white;
+
+
+}
+
+.jfx-date-picker>.text-field{
+    -fx-text-fill: WHITE;
+    -fx-prompt-text-fill: WHITE;
+    -jfx-unfocus-color: #868686;
+    -jfx-focus-color: WHITE;
+
+}
+.jfx-date-picker .month-year-pane{
+    -fx-background-color: -fx-primary;
+}
+.jfx-user-data-font{
+    -fx-font-size: 12px;
+    -fx-text-fill: WHITE;
+    -fx-prompt-text-fill: WHITE;
+    -fx-prompt-text-alignment: center;
+}
+
+
+.combo-box > .cell {
+    -fx-text-fill:  WHITE;
+}
+.jfx-combo-box-promp.cell{
+    -fx-prompt-text-fill: WHITE;
+
+}

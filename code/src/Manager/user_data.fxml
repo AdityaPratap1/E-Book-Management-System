@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../LogIn/login_style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Manager.UserDataScreenController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="45.0" layoutY="24.0" prefHeight="17.0" prefWidth="389.0" text="STUDENT NAME" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField editable="false" focusColor="WHITE" labelFloat="true" layoutX="415.0" layoutY="209.0" prefHeight="38.0" prefWidth="95.0" promptText="Student ID" styleClass="jfx-user-data-font" stylesheets="@../LogIn/login_style.css" text="157328" unFocusColor="#868686">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </JFXTextField>
+      <JFXToggleButton layoutX="394.0" layoutY="14.0" prefHeight="58.0" prefWidth="150.0" text="Edit Details" textFill="WHITE" />
+      <JFXTextField editable="false" focusColor="WHITE" labelFloat="true" layoutX="225.0" layoutY="209.0" prefHeight="44.0" prefWidth="150.0" promptText="Password" styleClass="jfx-user-data-font" stylesheets="@../LogIn/login_style.css" text="Varun@2001" unFocusColor="#868686" />
+      <JFXTextField editable="false" focusColor="WHITE" labelFloat="true" layoutX="45.0" layoutY="209.0" prefHeight="44.0" prefWidth="158.0" promptText="Username" styleClass="jfx-user-data-font" text="AdityaPratap" unFocusColor="#868686" />
+      <JFXTextField editable="false" focusColor="WHITE" labelFloat="true" layoutX="45.0" layoutY="314.0" prefHeight="44.0" prefWidth="246.0" promptText="Email" styleClass="jfx-user-data-font" text="aditya.pratapa@gmail.com" unFocusColor="#868686" />
+      <JFXTextField editable="false" focusColor="WHITE" labelFloat="true" layoutX="415.0" layoutY="108.0" prefHeight="44.0" prefWidth="63.0" promptText="Grade" styleClass="jfx-user-data-font" text="12" unFocusColor="#868686" />
+      <JFXTextField editable="false" focusColor="WHITE" labelFloat="true" layoutX="45.0" layoutY="108.0" prefHeight="44.0" prefWidth="139.0" promptText="First Name" styleClass="jfx-user-data-font" text="Aditya" unFocusColor="#868686" />
+      <JFXTextField editable="false" focusColor="WHITE" labelFloat="true" layoutX="225.0" layoutY="108.0" prefHeight="44.0" prefWidth="128.0" promptText="Last Name" styleClass="jfx-user-data-font" text="Pratap" unFocusColor="#868686" />
+      <JFXButton layoutX="424.0" layoutY="314.0" styleClass="login-button" text=" Save Student" />
+      <JFXButton fx:id="btnUserList" layoutX="19.0" layoutY="31.0" onAction="#onViewUserListAction" styleClass="login-button" text="View User List" />
+   </children>
+</AnchorPane>

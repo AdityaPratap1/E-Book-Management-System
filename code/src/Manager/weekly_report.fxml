@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../LogIn/login_style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Manager.WeeklyReportScreenController">
+   <children>
+      <TableView fx:id="weeklyReportTableView" layoutX="12.0" layoutY="100.0" prefHeight="282.0" prefWidth="577.0">
+        <columns>
+          <TableColumn fx:id="studentNameCol" prefWidth="183.0" text="Student Name" />
+            <TableColumn fx:id="bookTitleCol" prefWidth="219.0" text="Book Title" />
+            <TableColumn fx:id="issueDateCol" prefWidth="174.0" text="Issued On" />
+        </columns>
+      </TableView>
+      <Label layoutX="197.0" layoutY="21.0" text="Weekly Book Issue Report" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnUserList" layoutX="43.0" layoutY="35.0" onAction="#onViewUserList" styleClass="login-button" text="View User List" textFill="WHITE" />
+      <JFXTextField fx:id="dateFilter" alignment="TOP_CENTER" focusColor="WHITE" layoutX="197.0" layoutY="48.0" prefHeight="29.0" prefWidth="207.0" promptText="Enter Value to Filter Records" styleClass="login_text_fields" unFocusColor="#868686" />
+   </children>
+</AnchorPane>
